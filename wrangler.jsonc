@@ -13,8 +13,9 @@
     "directory": "./",
     // When a path isn't found, show our custom 404.html
     "not_found_handling": "404-page",
-    // Treat /about as /about.html (cleaner URLs in future)
-    "html_handling": "auto-trailing-slash"
+    // Serve .html files as-is — no redirect stripping the extension.
+    // This keeps canonical tags and internal nav links matching the real URL.
+    "html_handling": "none"
   },
 
   // Observability (free, shows logs/errors in Cloudflare dashboard)
