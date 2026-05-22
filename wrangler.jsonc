@@ -8,9 +8,15 @@
   "name": "krc",
   "compatibility_date": "2025-05-22",
 
+  // Tiny Worker just to map `/` → `/index.html`. Everything else passes
+  // straight through to static assets.
+  "main": "src/index.js",
+
   // Serve everything in the repo root as static assets
   "assets": {
     "directory": "./",
+    // Make the static-assets binding available to the Worker as `env.ASSETS`
+    "binding": "ASSETS",
     // When a path isn't found, show our custom 404.html
     "not_found_handling": "404-page",
     // Serve .html files as-is — no redirect stripping the extension.
