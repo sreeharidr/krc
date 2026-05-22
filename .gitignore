@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node / build artifacts (none today, but safe defaults)
+node_modules/
+dist/
+build/
+.cache/
+
+# Environment / secrets (we don't have any, but never commit these)
+.env
+.env.local
+*.key
+*.pem
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS thumbnails
+Thumbs.db
+ehthumbs.db

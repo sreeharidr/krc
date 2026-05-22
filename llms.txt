@@ -1,0 +1,55 @@
+# Kurnool Rheumatology Centre
+
+> Specialist rheumatology clinic in Kurnool, Andhra Pradesh, India. Diagnosis and long-term management of arthritis, autoimmune diseases, joint pain, and bone health. Led by Dr. Sree Hari Reddy Gadekallu, MD, MRCP, SCE (Rheumatology) — 9+ years of focused practice, 15,000+ patients treated. Bilingual care in English and Telugu.
+
+## Contact
+
+- **Phone**: +91 8333 837 666
+- **WhatsApp**: https://wa.me/918333837666
+- **Email**: kurnool.rheumatology@gmail.com
+- **Address**: Near Amma Hospital, Madhava Nagar, Nandyal Road, Kurnool, Andhra Pradesh, India
+- **Hours**: Monday – Saturday, 9:00 AM – 8:00 PM IST. Closed Sundays.
+- **Map**: https://maps.app.goo.gl/mRYekLuWnqAVZDu87
+
+## Doctor
+
+- **Name**: Dr. Sree Hari Reddy Gadekallu
+- **Qualifications**: MD (Medicine), MRCP (UK), SCE Rheumatology — Royal College of Physicians, UK
+- **Experience**: 9+ years of focused rheumatology practice
+- **Patients treated**: 15,000+
+- **Languages**: English, Telugu
+
+## Pages
+
+- [Home](https://rheumatology.center/): Overview, stats, navigation cards
+- [About & Visit](https://rheumatology.center/about.html): Address, hours, map, contact form
+- [Our Doctor](https://rheumatology.center/team.html): Dr. Gadekallu's profile, credentials, approach
+- [Conditions We Treat](https://rheumatology.center/conditions.html): Rheumatoid Arthritis, Osteoarthritis, SLE / Lupus, Ankylosing Spondylitis, Gout, Psoriatic Arthritis, Vasculitis, Osteoporosis, and other rheumatologic conditions
+- [Services](https://rheumatology.center/services.html): Specialist consultation, intra-articular injections, on-site lab (ESR, CRP, RF, Anti-CCP, ANA), imaging access, on-site pharmacy, follow-up monitoring, WhatsApp / phone support
+- [First Visit Guide](https://rheumatology.center/first-visit.html): Booking, what to bring, what to expect during the first consultation
+- [FAQ](https://rheumatology.center/faq.html): Common patient questions about referrals, insurance, tests, medication safety, between-visit access
+- [Patient Resources](https://rheumatology.center/resources.html): Blood-test explainers (ESR, CRP, RF, Anti-CCP, ANA, uric acid, HLA-B27), medication safety, lifestyle guidance
+- [Patient Stories](https://rheumatology.center/testimonials.html): Real patient experiences and Google Reviews
+
+## Conditions treated (full list)
+
+Rheumatoid Arthritis (RA), Osteoarthritis (OA), Systemic Lupus Erythematosus (SLE), Ankylosing Spondylitis, Spondyloarthritis, Gout, Psoriatic Arthritis, Vasculitis, Osteoporosis, Sjögren's Syndrome, Scleroderma, Polymyalgia Rheumatica, Fibromyalgia, Reactive Arthritis, Behçet's Disease, Mixed Connective Tissue Disease, Undifferentiated inflammatory arthritis.
+
+## Services
+
+Specialist rheumatology consultation, intra-articular (joint) corticosteroid injections, joint aspiration, on-site phlebotomy, autoantibody panels, DEXA / bone density assessment, on-site pharmacy with specialty rheumatology medications, long-term disease monitoring, coordinated multi-specialty referrals, bilingual (English / Telugu) consultations, phone & WhatsApp follow-up support during clinic hours.
+
+## How to book
+
+Appointments are by prior booking. Patients can:
+1. Call +91 8333 837 666 during clinic hours
+2. Message via WhatsApp: https://wa.me/918333837666
+3. Send a non-urgent message via the contact form at https://rheumatology.center/about.html
+
+## Geographic coverage
+
+Primary catchment: Kurnool district, Rayalaseema region (Anantapur, Kadapa, Chittoor districts), Andhra Pradesh. Patients also travel from neighbouring regions in Telangana and Karnataka.
+
+## Crawl policy
+
+This site is open to all major search engines and AI assistants. See https://rheumatology.center/robots.txt for details. All content is intended for general patient education and is not a substitute for individual medical advice.

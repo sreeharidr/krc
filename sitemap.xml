@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://rheumatology.center/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rheumatology.center/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="te-IN" href="https://rheumatology.center/?lang=te"/>
+  </url>
+
+  <url>
+    <loc>https://rheumatology.center/about.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rheumatology.center/about.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="te-IN" href="https://rheumatology.center/about.html?lang=te"/>
+  </url>
+
+  <url>
+    <loc>https://rheumatology.center/team.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rheumatology.center/team.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="te-IN" href="https://rheumatology.center/team.html?lang=te"/>
+  </url>
+
+  <url>
+    <loc>https://rheumatology.center/conditions.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rheumatology.center/conditions.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="te-IN" href="https://rheumatology.center/conditions.html?lang=te"/>
+  </url>
+
+  <url>
+    <loc>https://rheumatology.center/services.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rheumatology.center/services.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="te-IN" href="https://rheumatology.center/services.html?lang=te"/>
+  </url>
+
+  <url>
+    <loc>https://rheumatology.center/first-visit.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rheumatology.center/first-visit.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="te-IN" href="https://rheumatology.center/first-visit.html?lang=te"/>
+  </url>
+
+  <url>
+    <loc>https://rheumatology.center/faq.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rheumatology.center/faq.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="te-IN" href="https://rheumatology.center/faq.html?lang=te"/>
+  </url>
+
+  <url>
+    <loc>https://rheumatology.center/resources.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rheumatology.center/resources.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="te-IN" href="https://rheumatology.center/resources.html?lang=te"/>
+  </url>
+
+  <url>
+    <loc>https://rheumatology.center/testimonials.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rheumatology.center/testimonials.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="te-IN" href="https://rheumatology.center/testimonials.html?lang=te"/>
+  </url>
+
+</urlset>
