@@ -11,6 +11,14 @@ export default {
     async fetch(request, env) {
         const url = new URL(request.url);
 
+        // Redirect www.rheumatology.center → rheumatology.center (canonical host).
+        // Preserves path, query, and fragment. 301 = permanent, so browsers and
+        // search engines stop requesting the www variant entirely.
+        if (url.hostname === 'www.rheumatology.center') {
+            url.hostname = 'rheumatology.center';
+            return Response.redirect(url.toString(), 301);
+        }
+
         // Serve the homepage at /
         if (url.pathname === '/') {
             const indexUrl = new URL('/index.html', url);
