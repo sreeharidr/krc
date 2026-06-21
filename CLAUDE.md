@@ -139,21 +139,23 @@ We do **NOT** use:
 
 These are non-obvious things that took us time to figure out. Don't undo them without understanding why.
 
-1. **`wrangler.jsonc` has `html_handling: "none"` AND a Worker entry.** Together these keep `.html` URLs intact (matching canonicals + internal links) while still serving `/index.html` at the bare root `/`. If you change `html_handling` to anything else, Cloudflare will start 307-redirecting `/about.html` → `/about`, breaking the canonical match.
+1. **`wrangler.jsonc` has `html_handling: "none"` AND a Worker entry AND `run_worker_first: true`.** Together these keep `.html` URLs intact (matching canonicals + internal links), serve `/index.html` at the bare root `/`, AND make the www→non-www redirect fire for every path (not just asset misses). If you change `html_handling` to anything else, Cloudflare will start 307-redirecting `/about.html` → `/about`, breaking the canonical match. If you remove `run_worker_first`, the redirect will only fire for paths with no matching static asset.
 
-2. **The site replaced a Twine-built version.** The old site at `rheumatology.center` was authored in Twine (interactive-fiction tool) with wiki-style `[[Page]]` linking. We migrated to a conventional multi-page site for better UX, SEO, and patient navigation. Don't suggest going back to a single-page or narrative format.
+2. **www.rheumatology.center 301-redirects to rheumatology.center.** Handled inside `src/index.js`. Canonical hostname is the non-www variant. This eliminates duplicate-content concerns and aligns the served URL with every `<link rel="canonical">` on the site. Don't add `www.` to canonicals, sitemap, or OG URLs.
 
-3. **No frameworks.** User declined Hugo, Astro, Eleventy after explicit comparison. Static HTML is the agreed answer until a blog/news section becomes a priority. **If a blog is requested in future, Hugo is the agreed migration target.**
+3. **The site replaced a Twine-built version.** The old site at `rheumatology.center` was authored in Twine (interactive-fiction tool) with wiki-style `[[Page]]` linking. We migrated to a conventional multi-page site for better UX, SEO, and patient navigation. Don't suggest going back to a single-page or narrative format.
 
-4. **Bilingual via JS toggle, not separate URLs.** We chose this for simplicity and because the patient base often code-switches between English and Telugu in one session. Don't migrate to `/en/` and `/te/` subpaths without strong reason.
+4. **No frameworks.** User declined Hugo, Astro, Eleventy after explicit comparison. Static HTML is the agreed answer until a blog/news section becomes a priority. **If a blog is requested in future, Hugo is the agreed migration target.**
 
-5. **Placeholder testimonials.** The 8 testimonials in `testimonials.html` are stylistically realistic but are placeholders awaiting real patient-consent content. The 3 on the homepage are likewise placeholders. Treat them as such — don't claim they're real in copy, schema, or external content.
+5. **Bilingual via JS toggle, not separate URLs.** We chose this for simplicity and because the patient base often code-switches between English and Telugu in one session. Don't migrate to `/en/` and `/te/` subpaths without strong reason.
 
-6. **`html_handling: "none"` does NOT auto-serve `/index.html` for `/`** despite Cloudflare's docs claiming otherwise — we verified this empirically and added `src/index.js` to handle it. If `/` ever 404s after a config change, this is the first place to look.
+6. **Placeholder testimonials.** The 8 testimonials in `testimonials.html` are stylistically realistic but are placeholders awaiting real patient-consent content. The 3 on the homepage are likewise placeholders. Treat them as such — don't claim they're real in copy, schema, or external content.
 
-7. **DO NOT add a `README.md` to the repo.** User has explicitly said don't create docs files unless asked. This CLAUDE.md is the one exception (they asked for it).
+7. **`html_handling: "none"` does NOT auto-serve `/index.html` for `/`** despite Cloudflare's docs claiming otherwise — we verified this empirically and added `src/index.js` to handle it. If `/` ever 404s after a config change, this is the first place to look.
 
-8. **Insurance is NOT accepted.** Mention this in copy as: "We don't process insurance directly at this time; we provide detailed receipts for reimbursement." Don't promise insurance support.
+8. **DO NOT add a `README.md` to the repo.** User has explicitly said don't create docs files unless asked. This CLAUDE.md is the one exception (they asked for it).
+
+9. **Insurance is NOT accepted.** Mention this in copy as: "We don't process insurance directly at this time; we provide detailed receipts for reimbursement." Don't promise insurance support.
 
 ## What's intentionally left for later
 
