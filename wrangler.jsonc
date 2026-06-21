@@ -21,7 +21,11 @@
     "not_found_handling": "404-page",
     // Serve .html files as-is — no redirect stripping the extension.
     // This keeps canonical tags and internal nav links matching the real URL.
-    "html_handling": "none"
+    "html_handling": "none",
+    // Run the Worker on EVERY request (default would skip the Worker when a
+    // matching asset exists). We need this so the www→non-www redirect fires
+    // for asset paths like /about.html, not just for asset misses like /.
+    "run_worker_first": true
   },
 
   // Observability (free, shows logs/errors in Cloudflare dashboard)
