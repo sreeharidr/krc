@@ -30,3 +30,15 @@ npm-debug.log*
 # OS thumbnails
 Thumbs.db
 ehthumbs.db
+
+# Agent tooling — local only, never deployed.
+# Everything in the repo root is uploaded as a static asset by wrangler, so
+# keeping these untracked also keeps them off the public domain.
+# Reinstall with:
+#   npx skills add https://github.com/anthropics/skills --skill frontend-design
+.agents/
+.claude/
+skills-lock.json
+
+# Throwaway design mockups (not part of the site)
+mockup-*.html

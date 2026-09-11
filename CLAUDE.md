@@ -35,6 +35,16 @@ These are the source of truth. Don't paraphrase or invent variations.
 - **Source of truth:** GitHub repo `sreeharidr/krc` (public). User is `sreeharidr` on GitHub; `gh` CLI is authenticated.
 - **Auto-deploy:** every `git push` to `main` triggers a Cloudflare deploy in ~30 sec via `npx wrangler deploy`.
 
+### Local agent tooling (gitignored)
+
+Anthropic's `frontend-design` skill is installed locally at `.agents/skills/frontend-design`, symlinked into `.claude/skills/`. It is **deliberately gitignored** — everything in the repo root deploys as a public static asset, and third-party tooling has no business on the clinic's domain. Reinstall on a new machine with:
+
+```
+npx skills add https://github.com/anthropics/skills --skill frontend-design
+```
+
+Read that skill before any design work. It is the agreed process for the redesign (plan a token system → audit it for genericness → only then build).
+
 ## File map
 
 ```
