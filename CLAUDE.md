@@ -8,6 +8,11 @@ Static, bilingual (English + Telugu) website for **Kurnool Rheumatology Centre**
 
 The site is **live at https://rheumatology.center**, deployed on Cloudflare Workers with Static Assets, with auto-deploy from GitHub on every push to `main`.
 
+> **Read `CONTENT.md` alongside this file.** This file = *how to work in this repo* (conventions,
+> gotchas, deploy). `CONTENT.md` = *what the site says and how it's organised* (page-by-page
+> structure, content inventory, user flows, and the log of design directions already rejected).
+> Before proposing any redesign, read `CONTENT.md` § 6 so you don't re-pitch a rejected direction.
+
 ## Clinic & owner facts
 
 These are the source of truth. Don't paraphrase or invent variations.
@@ -47,6 +52,7 @@ These are the source of truth. Don't paraphrase or invent variations.
 ├── robots.txt              Welcomes search engines + AI crawlers (GPTBot, ClaudeBot, etc.)
 ├── sitemap.xml             9 URLs with hreflang alternates
 ├── llms.txt                Markdown digest for LLMs (emerging standard)
+├── CONTENT.md              Structure, content inventory, user flows, design decisions log
 ├── wrangler.jsonc          Cloudflare deploy config — DO NOT change html_handling without reading "Gotchas" below
 ├── src/index.js            5-line Worker that maps / → /index.html
 ├── css/styles.css          Whole design system; see below
@@ -156,6 +162,8 @@ These are non-obvious things that took us time to figure out. Don't undo them wi
 8. **DO NOT add a `README.md` to the repo.** User has explicitly said don't create docs files unless asked. This CLAUDE.md is the one exception (they asked for it).
 
 9. **Insurance is NOT accepted.** Mention this in copy as: "We don't process insurance directly at this time; we provide detailed receipts for reimbursement." Don't promise insurance support.
+
+10. **A redesign is in progress (Sept 2026).** The current live design has been judged too generic by the owner. Two directions have already been rejected — the v1 card-grid look, and an editorial treatment with line-by-line English/Telugu pairing (the stacked bilingual lines read awkwardly). Full log in `CONTENT.md` § 6, including the unresolved question of how to present both languages. Don't re-pitch either rejected direction.
 
 ## What's intentionally left for later
 
